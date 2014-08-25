@@ -1,0 +1,25 @@
+{
+  "name": "node-country",
+  "version": "0.1.0",
+  "description": "Country utilities",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/manast/node-country.git"
+  },
+  "keywords": [
+    "country"
+  ],
+  "author": "Manuel Astudillo",
+  "license": "BSD",
+  "bugs": {
+    "url": "https://github.com/manast/node-country/issues"
+  },
+  "homepage": "https://github.com/manast/node-country",
+  "dependencies": {
+    "requirejs": "^2.1.14"
+  }
+}
