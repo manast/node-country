@@ -13,9 +13,9 @@ define(function(){
     /**
       Compares two countries to see if they have the same name
 
-      @param x two, three country code or english country name.
-      @param y two, three country code or english country name.
-      @returns true if they are the same.
+      @param x two, three letters country code or english country name.
+      @param y two, three letters country code or english country name.
+      @returns the two letters country code if they are the same.
     */
     compare: function(x, y){
       var a, b;
@@ -26,16 +26,15 @@ define(function(){
         if(a && b) break;
       }
       if(a && b && (a.code2 == b.code2)){
-        return true;
+        return a.code2;
       }
     }
 	};
 
   function check(country, code){
     if(country.code2 == code || country.code3 == code || country.name.toLowerCase() == code.toLowerCase()){
-      return true;
+      return country;
     }
-    return false;
   }
 
   var world = [ { name: 'Afghanistan', code2: 'AF', code3: 'AFG', tld: [ '.af' ] },
